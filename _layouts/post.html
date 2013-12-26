@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<section id="home">
+<section id="main">
 	<article>
 		<h1>
-			<a href="{{ site.baseurl }}/{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+			<a href="{{ site.baseurl }}{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
 		</h1>
 			{{ content }}
 		<footer>
-			<p><time>{{ page.date | date_to_string }}</time> &mdash; <a href="{{ site.baseurl }}/{{ page.url }}" title="Permalink">Permalink</a></p>
+			<p><time>{{ page.date | date_to_string }}</time> &mdash; <a href="{{ site.baseurl }}{{ page.url }}" title="Permalink">Permalink</a></p>
 		</footer>
 	</article>
 </section>

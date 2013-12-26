@@ -3,17 +3,17 @@ layout: default
 title: "sometimes designish, always a little geeky"
 ---
 
-<section id="home">
+<section id="main">
 	{% for post in site.posts %}
 	<article>
 		<h1>
-			<a href="{{ site.baseurl }}/{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 		</h1>
 		<p>
-			{{ post.summary }}
+			{{ post.content }}
 		</p>
 		<footer>
-			<p><time>{{ post.date | date_to_string }}</time> &mdash; <a href="{{ site.baseurl }}/{{ post.url }}" title="Permalink">Permalink</a></p>
+			<p><time>{{ post.date | date_to_string }}</time> &mdash; <a href="{{ site.baseurl }}{{ post.url }}" title="Permalink">Permalink</a></p>
 		</footer>
 	</article>
 	{% endfor %}

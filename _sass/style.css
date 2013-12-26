@@ -107,7 +107,7 @@ header ul li {
   padding-right: 1em;
 }
 
-section#home {
+section#main {
   width: 40em;
   margin: 0 auto;
 }
@@ -272,7 +272,7 @@ footer ul li {
     margin-left: 3.725em;
   }
 
-  section#home {
+  section#main {
     width: 100%;
   }
 

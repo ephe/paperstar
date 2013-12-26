@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A post for the ages"
-summary: "As a Christmas gift to myself, I nuked my old website from orbit and started clean with Jekyll. Welp."
+summary: "As a Christmas gift to myself, I nuked my old website from orbit and started clean with Jekyll."
 ---
 As a Christmas gift to myself, I nuked my old website from orbit and started clean with Jekyll.
 
