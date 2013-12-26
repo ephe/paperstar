@@ -1,9 +1,16 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+<section id="home">
+	<article>
+		<h1>
+			<a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+		</h1>
+		<p>
+			{{ content }}
+		</p>
+		<footer>
+			<p>Written <time>{{ page.date | date_to_string }}</time> &mdash; <a href="{{ page.url }}" title="Permalink">Permalink</a></p>
+		</footer>
+	</article>
+</section>
