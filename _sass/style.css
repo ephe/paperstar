@@ -1,4 +1,3 @@
-/* line 10, ../_sass/style.scss */
 body {
   background-color: #c3cad0;
   margin: 0;
@@ -11,23 +10,19 @@ body {
   text-size-adjust: 100%;
 }
 
-/* line 22, ../_sass/style.scss */
 p {
   line-height: 1.5em;
 }
 
-/* line 27, ../_sass/style.scss */
 a {
   text-decoration: none;
   color: #6d2e1d;
 }
 
-/* line 32, ../_sass/style.scss */
 a:active, a:hover {
   color: #8c4b16;
 }
 
-/* line 37, ../_sass/style.scss */
 .topbar {
   width: 100%;
   height: 100px;
@@ -36,7 +31,6 @@ a:active, a:hover {
   border-bottom: 1px solid #8a939f;
 }
 
-/* line 45, ../_sass/style.scss */
 header {
   position: relative;
   width: 40em;
@@ -45,7 +39,6 @@ header {
   margin: 0 auto;
 }
 
-/* line 53, ../_sass/style.scss */
 header img {
   width: 100px;
   height: 100px;
@@ -57,7 +50,6 @@ header img {
   border-radius: 50px;
 }
 
-/* line 64, ../_sass/style.scss */
 header h1, h2 {
   display: block;
   position: relative;
@@ -65,19 +57,16 @@ header h1, h2 {
   line-height: 1em;
 }
 
-/* line 71, ../_sass/style.scss */
 header h1 a, header h1 a:hover {
   color: #2f3640;
   font-weight: bold;
   font-size: 1.9em;
 }
 
-/* line 77, ../_sass/style.scss */
 header h1.mobileHeader {
   display: none;
 }
 
-/* line 81, ../_sass/style.scss */
 header h2 {
   color: #606c7c;
   margin-top: 0.7em;
@@ -85,21 +74,18 @@ header h2 {
   font-size: 1.1em;
 }
 
-/* line 88, ../_sass/style.scss */
 header nav {
   position: absolute;
   bottom: 0;
   margin-left: 7.5em;
 }
 
-/* line 94, ../_sass/style.scss */
 header ul li {
   display: inline;
   list-style-type: none;
   padding-right: 1em;
 }
 
-/* line 102, ../_sass/style.scss */
 section#home {
   height: 100%;
   min-height: 500px;
@@ -107,12 +93,10 @@ section#home {
   margin: 0 auto;
 }
 
-/* line 109, ../_sass/style.scss */
 article {
   margin-top: 2em;
 }
 
-/* line 113, ../_sass/style.scss */
 article h1 {
   font-size: 1.5em;
   font-weight: bold;
@@ -121,7 +105,6 @@ article h1 {
   margin-bottom: 0.5em;
 }
 
-/* line 121, ../_sass/style.scss */
 article h2 {
   color: #606c7c;
   font-size: 1.1em;
@@ -130,30 +113,25 @@ article h2 {
   margin-bottom: 1em;
 }
 
-/* line 129, ../_sass/style.scss */
 article p {
   margin-bottom: 1em;
 }
 
-/* line 133, ../_sass/style.scss */
 .full {
   display: block;
   margin: 1em 0;
 }
 
-/* line 138, ../_sass/style.scss */
 .floatL {
   float: left;
   margin: 1em 1em 1em 0;
 }
 
-/* line 143, ../_sass/style.scss */
 .floatR {
   float: right;
   margin: 1em 0 1em 1em;
 }
 
-/* line 148, ../_sass/style.scss */
 article ol {
   margin-bottom: 1em;
   list-style-type: decimal;
@@ -161,7 +139,6 @@ article ol {
   padding-left: 1em;
 }
 
-/* line 155, ../_sass/style.scss */
 article ul {
   margin-bottom: 1em;
   list-style-type: disc;
@@ -169,7 +146,6 @@ article ul {
   padding-left: 1em;
 }
 
-/* line 162, ../_sass/style.scss */
 article blockquote {
   color: #195b7d;
   margin: 1.5em 0;
@@ -177,7 +153,6 @@ article blockquote {
   border-left: 4px solid #8a939f;
 }
 
-/* line 169, ../_sass/style.scss */
 article aside {
   width: 25%;
   color: #606c7c;
@@ -185,14 +160,12 @@ article aside {
   font-size: 1.2em;
 }
 
-/* line 176, ../_sass/style.scss */
 article footer p {
   text-align: right;
   font-size: 0.925em;
   color: #606c7c;
 }
 
-/* line 183, ../_sass/style.scss */
 .bottombar {
   width: 100%;
   border-bottom: 8px solid #195b7d;
@@ -200,7 +173,6 @@ article footer p {
   min-height: 120px;
 }
 
-/* line 190, ../_sass/style.scss */
 footer#bottom {
   display: block;
   position: relative;
@@ -212,17 +184,14 @@ footer#bottom {
   text-align: center;
 }
 
-/* line 201, ../_sass/style.scss */
 #bottom p {
   font-size: 0.9em;
 }
 
-/* line 205, ../_sass/style.scss */
 footer nav {
   margin-top: 0.5em;
 }
 
-/* line 209, ../_sass/style.scss */
 footer ul li {
   display: inline;
   list-style-type: none;
@@ -230,7 +199,6 @@ footer ul li {
 }
 
 @media only screen and (max-width: 41em) {
-  /* line 217, ../_sass/style.scss */
   .topbar {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -240,14 +208,12 @@ footer ul li {
     padding: 0.5em;
   }
 
-  /* line 226, ../_sass/style.scss */
   header {
     width: 100%;
     height: 3.2em;
     min-height: 3.2em;
   }
 
-  /* line 232, ../_sass/style.scss */
   header img {
     width: 3.125em;
     height: 3.125em;
@@ -259,12 +225,10 @@ footer ul li {
     padding: 0;
   }
 
-  /* line 243, ../_sass/style.scss */
   header h1 {
     display: inline;
   }
 
-  /* line 247, ../_sass/style.scss */
   header h1 a, header h1 a:hover, header h1 a:active, header h1 a:visited {
     display: inline;
     margin-top: 0.1em;
@@ -272,7 +236,6 @@ footer ul li {
     line-height: 1em;
   }
 
-  /* line 254, ../_sass/style.scss */
   header h1.mobileHeader {
     display: inline;
     color: #606c7c;
@@ -281,39 +244,32 @@ footer ul li {
     line-height: 1em;
   }
 
-  /* line 262, ../_sass/style.scss */
   header h2 {
     display: none;
   }
 
-  /* line 266, ../_sass/style.scss */
   header nav {
     margin-left: 3.725em;
   }
 
-  /* line 270, ../_sass/style.scss */
   section#home {
     width: 100%;
   }
 
-  /* line 274, ../_sass/style.scss */
   article {
     margin-top: 1em;
     padding: 0 0.75em;
   }
 
-  /* line 279, ../_sass/style.scss */
   article h1 {
     font-size: 1.3em;
   }
 
-  /* line 283, ../_sass/style.scss */
   article img {
     max-width: 100%;
     height: auto;
   }
 
-  /* line 288, ../_sass/style.scss */
   .bottombar {
     width: 100%;
     height: auto;
@@ -324,7 +280,6 @@ footer ul li {
     min-height: auto;
   }
 
-  /* line 298, ../_sass/style.scss */
   footer#bottom {
     width: 100%;
     height: auto;
@@ -333,12 +288,10 @@ footer ul li {
   }
 }
 @media only screen and (max-width: 22.25em) {
-  /* line 308, ../_sass/style.scss */
   header img {
     display: none;
   }
 
-  /* line 312, ../_sass/style.scss */
   header nav {
     position: relative;
     margin: 0.5em 0 0 0;
