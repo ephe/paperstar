@@ -1,5 +1,6 @@
 // Variables
-$font: 'PT Serif', serif;
+$font-face: 'PT Serif', serif;
+$bgcolor: #c3cad0;
 $bodyText: #2f3640;
 $emphasis: #195b7d;
 $accent: #606c7c;
@@ -7,11 +8,15 @@ $lightAccent: #8a939f;
 
 
 // General
-body { 
-	background-color: #c3cad0;
+body, html {
+	height: 100%;
+}
+
+body {
+	background-color: $bgcolor;
 	margin: 0;
 	padding: 0;
-	font: 1em $font;
+	font: 1em $font-face;
 	color: $bodyText;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -20,7 +25,6 @@ body {
 }
 
 p {
-	// font: 0.9em "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
 	line-height: 1.5em;
 }
 
@@ -39,6 +43,15 @@ a {
 
 a:active, a:hover {
 	color: #8c4b16;	
+}
+
+.wrapper {
+	position: relative;
+	padding: 0 0 128px 0;
+	min-height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 // Header
@@ -108,8 +121,6 @@ header ul li {
 
 // Body
 section#home {
-	height: 100%;
-	min-height: 500px;
 	width: 40em;
 	margin: 0 auto;
 }
@@ -193,16 +204,17 @@ article footer p {
 	border-bottom: 8px solid $emphasis;
 	height: 120px;
 	min-height: 120px;
+	position: absolute;
+	bottom: 0;
 }
 
 footer#bottom {
 	display: block;
-	position: relative;
 	width: 40em;
 	height: 100px;
 	min-height: 100px;
 	margin: 0 auto;
-	margin-top: 2em;
+	margin-top: 1.3em;
 	text-align: center;
 }
 
@@ -320,5 +332,9 @@ footer ul li {
 	header nav {
 		position: relative;
 		margin:0.5em 0 0 0;
+	}
+
+	.wrapper {
+		padding: 0 0 147px 0;
 	}
 }

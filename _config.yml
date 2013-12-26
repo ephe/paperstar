@@ -2,7 +2,6 @@ name: "paperstar"
 description: "a collection of thoughts from one Pauline Chan"
 markdown: redcarpet
 pygments: true
-paginate: 10
 permalink: pretty
 url: "http://ephe.github.io/paperstar/"
 baseurl: /paperstar
