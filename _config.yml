@@ -1,0 +1,4 @@
+name: Paperstar
+markdown: redcarpet
+pygments: true
+paginate: 10
