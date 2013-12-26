@@ -1,48 +1,20 @@
 ---
 layout: default
-author: Pauline Chan
-title: sometimes designish, always a little geeky
-permalink: pretty
+title: "sometimes designish, always a little geeky"
 ---
 
 <section id="home">
-	{% for post in paginator.posts %}
+	{% for post in site.posts %}
 	<article>
 		<h1>
 			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 		</h1>
 		<p>
-			{{ post.content }}
+			{{ post.summary }}
 		</p>
 		<footer>
-			<p>Written <time>{{ post.date | date_to_string }}</time> &mdash; <a href="{{ post.url }}" title="Permalink">Permalink</a></p>
+			<p><time>{{ post.date | date_to_string }}</time> &mdash; <a href="{{ post.url }}" title="Permalink">Permalink</a></p>
 		</footer>
 	</article>
 	{% endfor %}
-
-	{% if paginator.total_pages > 1 %}
-	<nav class="pagination">
-	  {% if paginator.previous_page %}
-	    <a href="{{ site.baseurl }}/{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-	  {% else %}
-	    <span>&laquo; Prev</span>
-	  {% endif %}
-
-	  {% for page in (1..paginator.total_pages) %}
-	    {% if page == paginator.page %}
-	      <em>{{ page }}</em>
-	    {% elsif page == 1 %}
-	      <a href="{{ site.baseurl }}/{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-	    {% else %}
-	      <a href="{{ site.baseurl }}/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-	    {% endif %}{{ site.baseurl }}
-	  {% endfor %}
-
-	  {% if paginator.next_page %}
-	    <a href="{{ site.baseurl }}/{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-	  {% else %}
-	    <span>Next &raquo;</span>
-	  {% endif %}
-	</nav>
-		{% endif %}
 </section>
